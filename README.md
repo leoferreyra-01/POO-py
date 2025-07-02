@@ -26,7 +26,7 @@ This project contains multiple exercises and examples to help you learn and prac
 - **Concepts**: Classes, objects, attributes, methods
 
 ### 2. Constructor (`2-Constructor/`)
-- **Files**: `calificaciones.py`, `main.py`
+- **Files**: `grades.py`, `main.py`
 - **Focus**: Constructor methods and practical application
 - **Concepts**: `__init__` method, parameter validation, interactive applications
 
