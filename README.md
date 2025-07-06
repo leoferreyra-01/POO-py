@@ -18,6 +18,8 @@ POO-py/
 │   ├── association.py
 │   ├── aggregation.py
 │   └── composition.py
+├── 5-Inheritance/
+│   └── Inheritance.py
 └── README.md
 ```
 
@@ -80,6 +82,28 @@ Demonstrates a "part-of" relationship where parts cannot exist independently:
 - Parts are created and destroyed with the whole object
 - Strong coupling where parts cannot exist without the container
 
+### 5. Inheritance (`5-Inheritance/`)
+- **File**: `Inheritance.py`
+- **Focus**: Class inheritance and method overriding
+- **Concepts**: Single inheritance, multiple inheritance, method overriding, super() function
+
+#### Vehicle Inheritance Hierarchy
+This exercise demonstrates inheritance concepts through a comprehensive vehicle class hierarchy:
+- **Vehicle**: Base class with brand and model attributes
+- **Electric**: Base class for electric functionality with battery capacity
+- **Car**: Single inheritance example extending Vehicle with color
+- **Motorcycle**: Single inheritance example extending Vehicle with engine capacity
+- **Truck**: Multi-level inheritance example extending Car with load capacity
+- **ElectricCar**: Multiple inheritance example combining Car and Electric features
+
+#### Key Inheritance Concepts Demonstrated:
+- **Single Inheritance**: Car and Motorcycle inheriting from Vehicle
+- **Multiple Inheritance**: ElectricCar inheriting from both Car and Electric
+- **Multi-level Inheritance**: Truck inheriting from Car, which inherits from Vehicle
+- **Method Overriding**: ElectricCar's see_info method overriding Vehicle's version
+- **Constructor Chaining**: Using `super()` and explicit parent class calls
+- **Method Chaining**: Calling parent methods from child classes
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -141,4 +165,10 @@ python aggregation.py
 
 # Composition relationship
 python composition.py
+```
+
+**Option E: Practice with Inheritance**
+```bash
+cd "5-Inheritance"
+python Inheritance.py
 ```
