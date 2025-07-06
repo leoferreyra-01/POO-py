@@ -20,6 +20,9 @@ POO-py/
 │   └── composition.py
 ├── 5-Inheritance/
 │   └── Inheritance.py
+├── 6-RPG/
+│   ├── main.py
+│   └── README.md
 └── README.md
 ```
 
@@ -104,6 +107,34 @@ This exercise demonstrates inheritance concepts through a comprehensive vehicle 
 - **Constructor Chaining**: Using `super()` and explicit parent class calls
 - **Method Chaining**: Calling parent methods from child classes
 
+### 6. RPG System (`6-RPG/`)
+- **File**: `main.py`
+- **Focus**: Comprehensive RPG system with proper encapsulation and inheritance
+- **Concepts**: Encapsulation, inheritance, class associations, battle system, weapon management
+
+#### Role-Playing Game Class System
+This exercise implements a complete RPG system that demonstrates advanced OOP concepts:
+- **Weapon Class**: Represents weapons with name and power attributes
+- **Character Class**: Base class with health, level, and weapon management
+- **Enemy Class**: Inherits from Character with bonus damage and enemy types
+- **Ally Class**: Inherits from Character with healing bonuses and ally types
+
+#### Key Features Implemented:
+- **Proper Encapsulation**: All attributes are private with getters/setters
+- **Input Validation**: Health bounds, level validation, damage constraints
+- **Weapon System**: Characters can equip weapons that affect battle damage
+- **Battle Mechanics**: Attack system using weapon power + character level
+- **Specialization**: Enemies get damage bonuses, Allies get healing bonuses
+- **Health Management**: Healing system with validation and defeat detection
+- **Class Associations**: Characters can have weapons equipped
+- **Method Overriding**: Specialized attack and heal methods in subclasses
+
+#### Encapsulation Examples:
+- Private attributes (`__name`, `__health`, `__weapon`, etc.)
+- Controlled access through getters/setters
+- Data validation in setters
+- Protection against invalid states
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -171,4 +202,10 @@ python composition.py
 ```bash
 cd "5-Inheritance"
 python Inheritance.py
+```
+
+**Option F: Practice with RPG System**
+```bash
+cd "6-RPG"
+python main.py
 ```
