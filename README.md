@@ -10,6 +10,9 @@ POO-py/
 │   └── main.py
 ├── 2-Constructor/
 │   ├── grades.py
+│   ├── main.py
+│   └── README.md
+├── 3-Encapsulation/
 │   └── main.py
 └── README.md
 ```
@@ -37,6 +40,18 @@ The main exercise in this section is a complete student grade management system 
 - Method implementation
 - User input handling
 - Error management
+
+### 3. Encapsulation (`3-Encapsulation/`)
+- **File**: `main.py`
+- **Focus**: Data encapsulation and access control
+- **Concepts**: Private attributes, property decorators, getters and setters
+
+#### Person Class with Encapsulated Age
+This exercise demonstrates encapsulation principles through a Person class that:
+- Uses private attributes (`__age`) to prevent direct external access
+- Implements property decorators for controlled access to sensitive data
+- Provides validation in setters to ensure data integrity
+- Shows how encapsulation protects data while maintaining controlled access
 
 ## 🚀 Getting Started
 
@@ -80,4 +95,10 @@ python main.py
 ```bash
 cd "2-Constructor"
 python grades.py
+```
+
+**Option C: Practice with Encapsulation Exercise**
+```bash
+cd "3-Encapsulation"
+python main.py
 ```
