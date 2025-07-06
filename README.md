@@ -23,6 +23,8 @@ POO-py/
 ├── 6-RPG/
 │   ├── main.py
 │   └── README.md
+├── 7-Polymorphism/
+│   └── polymorphism.py
 └── README.md
 ```
 
@@ -135,6 +137,29 @@ This exercise implements a complete RPG system that demonstrates advanced OOP co
 - Data validation in setters
 - Protection against invalid states
 
+### 7. Polymorphism (`7-Polymorphism/`)
+- **File**: `polymorphism.py`
+- **Focus**: Polymorphism through method overriding and interface uniformity
+- **Concepts**: Method overriding, interface polymorphism, runtime polymorphism
+
+#### Payment System Polymorphism
+This exercise demonstrates polymorphism concepts through a payment system where different payment methods can be treated uniformly:
+- **CreditCard Class**: Represents credit card payments with card details
+- **PayPal Class**: Represents PayPal payments with account credentials
+- **Common Interface**: Both classes implement a `pay()` method with different behaviors
+
+#### Key Polymorphism Concepts Demonstrated:
+- **Method Overriding**: Both CreditCard and PayPal implement `pay()` with different behaviors
+- **Interface Polymorphism**: Different objects can be treated uniformly through common methods
+- **Runtime Polymorphism**: The same method call produces different results based on object type
+- **Collection Polymorphism**: Processing different payment methods in a single loop
+
+#### Polymorphism Examples:
+- Same method name (`pay`) with different implementations
+- Uniform treatment of different object types
+- Dynamic method resolution at runtime
+- Code reusability through common interfaces
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -208,4 +233,10 @@ python Inheritance.py
 ```bash
 cd "6-RPG"
 python main.py
+```
+
+**Option G: Practice with Polymorphism**
+```bash
+cd "7-Polymorphism"
+python polymorphism.py
 ```
