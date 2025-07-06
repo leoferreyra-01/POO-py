@@ -25,6 +25,8 @@ POO-py/
 │   └── README.md
 ├── 7-Polymorphism/
 │   └── polymorphism.py
+├── 8-Abstraction/
+│   └── abstraction.py
 └── README.md
 ```
 
@@ -160,6 +162,30 @@ This exercise demonstrates polymorphism concepts through a payment system where 
 - Dynamic method resolution at runtime
 - Code reusability through common interfaces
 
+### 8. Abstraction (`8-Abstraction/`)
+- **File**: `abstraction.py`
+- **Focus**: Abstract classes and method abstraction
+- **Concepts**: Abstract base classes, abstract methods, interface definition, implementation hiding
+
+#### Vehicle Abstraction System
+This exercise demonstrates abstraction concepts through an abstract Vehicle class that defines a common interface for different vehicle types:
+- **Vehicle (Abstract)**: Base class that cannot be instantiated directly
+- **Car**: Concrete implementation extending Vehicle with color attribute
+- **Motorcycle**: Concrete implementation extending Vehicle with engine capacity
+
+#### Key Abstraction Concepts Demonstrated:
+- **Abstract Base Class**: Vehicle class that cannot be instantiated directly
+- **Abstract Methods**: `move()` method that must be implemented by subclasses
+- **Interface Definition**: Common interface for all vehicle types
+- **Implementation Hiding**: Concrete implementations are hidden behind abstract interface
+- **Template Pattern**: Abstract class provides structure for concrete classes
+
+#### Abstraction Examples:
+- Abstract class definition using `ABC` and `@abstractmethod`
+- Forced implementation of abstract methods in subclasses
+- Common interface definition across different vehicle types
+- Separation of interface from implementation details
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -239,4 +265,10 @@ python main.py
 ```bash
 cd "7-Polymorphism"
 python polymorphism.py
+```
+
+**Option H: Practice with Abstraction**
+```bash
+cd "8-Abstraction"
+python abstraction.py
 ```
