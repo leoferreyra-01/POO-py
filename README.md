@@ -14,6 +14,10 @@ POO-py/
 │   └── README.md
 ├── 3-Encapsulation/
 │   └── main.py
+├── 4-Relations/
+│   ├── association.py
+│   ├── aggregation.py
+│   └── composition.py
 └── README.md
 ```
 
@@ -52,6 +56,29 @@ This exercise demonstrates encapsulation principles through a Person class that:
 - Implements property decorators for controlled access to sensitive data
 - Provides validation in setters to ensure data integrity
 - Shows how encapsulation protects data while maintaining controlled access
+
+### 4. Object Relationships (`4-Relations/`)
+- **Files**: `association.py`, `aggregation.py`, `composition.py`
+- **Focus**: Different types of relationships between objects
+- **Concepts**: Association, Aggregation, Composition relationships
+
+#### Association Relationship (`association.py`)
+Demonstrates a "uses-a" relationship where objects can exist independently but can be linked:
+- Teacher and Subject classes with bidirectional association
+- Objects can exist independently and be linked later
+- Shows shared references and how changes propagate
+
+#### Aggregation Relationship (`aggregation.py`)
+Demonstrates a "has-a" relationship where objects can exist independently:
+- Library and Book classes showing container relationship
+- Books can exist without being in a library
+- Loose coupling between container and contained objects
+
+#### Composition Relationship (`composition.py`)
+Demonstrates a "part-of" relationship where parts cannot exist independently:
+- Car, Engine, and Wheels classes showing strong dependency
+- Parts are created and destroyed with the whole object
+- Strong coupling where parts cannot exist without the container
 
 ## 🚀 Getting Started
 
@@ -101,4 +128,17 @@ python grades.py
 ```bash
 cd "3-Encapsulation"
 python main.py
+```
+
+**Option D: Practice with Object Relationships**
+```bash
+cd "4-Relations"
+# Association relationship
+python association.py
+
+# Aggregation relationship  
+python aggregation.py
+
+# Composition relationship
+python composition.py
 ```
