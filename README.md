@@ -27,6 +27,9 @@ POO-py/
 │   └── polymorphism.py
 ├── 8-Abstraction/
 │   └── abstraction.py
+├── 9-Communication media/
+│   ├── media.py
+│   └── README.md
 └── README.md
 ```
 
@@ -186,6 +189,43 @@ This exercise demonstrates abstraction concepts through an abstract Vehicle clas
 - Common interface definition across different vehicle types
 - Separation of interface from implementation details
 
+### 9. Communication Media (`9-Communication media/`)
+- **File**: `media.py`
+- **Focus**: Class hierarchy with abstraction and polymorphism for communication media
+- **Concepts**: Abstract base classes, inheritance, polymorphism, interface uniformity
+
+#### Media Class Hierarchy System
+This exercise demonstrates a comprehensive class hierarchy for different types of communication media, combining abstraction and polymorphism concepts:
+- **Media (Abstract)**: Base abstract class with common attributes (title, author, date)
+- **Book**: Concrete implementation with pages and genre information
+- **Magazine**: Concrete implementation with topic and periodicity
+- **Newspaper**: Concrete implementation with news focus and publication frequency
+
+#### Key Features Implemented:
+- **Abstract Base Class**: Media class that cannot be instantiated directly
+- **Abstract Methods**: `describe()` method that must be implemented by all subclasses
+- **Inheritance Hierarchy**: All media types inherit from the abstract Media class
+- **Polymorphic Behavior**: Uniform interface through the `describe()` method
+- **Specialized Implementations**: Each media type provides unique description format
+
+#### Abstraction and Polymorphism Concepts Demonstrated:
+- **Abstract Class Definition**: Using `ABC` and `@abstractmethod` decorators
+- **Common Interface**: All media types implement the same `describe()` method
+- **Polymorphic Collections**: Processing different media types in a single list
+- **Method Overriding**: Each subclass provides its own `describe()` implementation
+- **Interface Uniformity**: Different objects can be treated uniformly through common methods
+
+#### Media Types and Their Characteristics:
+- **Book**: Focuses on literary content with pages and genre information
+- **Magazine**: Emphasizes topic and publication frequency
+- **Newspaper**: Highlights news content and daily/weekly publication nature
+
+#### Polymorphism Examples:
+- Same method name (`describe`) with different implementations across media types
+- Uniform treatment of different media objects in collections
+- Dynamic method resolution based on object type at runtime
+- Code reusability through common abstract interface
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -271,4 +311,10 @@ python polymorphism.py
 ```bash
 cd "8-Abstraction"
 python abstraction.py
+```
+
+**Option I: Practice with Communication Media**
+```bash
+cd "9-Communication media"
+python media.py
 ```
